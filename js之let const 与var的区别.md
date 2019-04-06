@@ -1,4 +1,4 @@
-#let const 与var的区别
+## let const 与var的区别
  - var 变量提升，其余两者没有，有暂时性死区
  - var在全局作用域下定义，会挂载到window上 其余两者不会
  - const声明的基本数据类型不可以修改
