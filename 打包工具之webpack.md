@@ -59,7 +59,7 @@ webpack可以看做是模块打包机，分析项目结构，找到js模块以�
      - }),
     -  new HtmlWebpackPlugin({
       -  template: './src/index.html',
-       - title: '珠峰学习',
+       - title: 'webpack学习',
       -  hash: true, // 版本
        - minify: {
         -  removeAttributeQuotes: true // 删除双引号
@@ -73,7 +73,7 @@ webpack可以看做是模块打包机，分析项目结构，找到js模块以�
      - // new HtmlWebpackPlugin({ // 多页面入口配置
     -  //   filename: 'b.html',
     -  //   template: './src/index.html',
-     - //   title: '珠峰学习',
+     - //   title: 'webpack学习',
      - //   hash: true, // 版本
      - //   minify: {
      - //     removeAttributeQuotes: true // 删除双引号
