@@ -19,3 +19,5 @@ webSocket是利用http协议建立连接的，可以发送文本和二进制数�
 
 # ws / wss的区别
 wss是安全的websocket连接机制和HTTPs类似，浏览器用wss://xxx创建WebSocket连接时，会先通过HTTPS创建安全的连接，然后，该HTTPS连接升级为WebSocket连接，底层通信走的仍然是安全的SSL/TLS协议。
+
+[推荐阅读](https://juejin.im/post/5c9ad3ecf265da61173a43ab)
