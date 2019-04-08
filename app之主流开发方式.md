@@ -42,5 +42,5 @@ Hybrid App(混合模式移动应用) 介于Web App、Native App之间 JS+Native�
  - 1.可能需要会原生开发以支持更多的硬件调用
  - 2.性能跟原生还是有差距，对设备有一定要求
 
- [本文来自，感谢作者]( https://www.jianshu.com/p/a7a77eb16a2a)
+ [本文出处，感谢作者]( https://www.jianshu.com/p/a7a77eb16a2a)
 
