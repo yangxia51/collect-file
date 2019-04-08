@@ -6,7 +6,7 @@
 - 大标题:'## *****' 
 - 换行 '- *****'
 - 使用图片 '![Image text](图片地址)'
-![Image text](./static/css_hackone.png)
+例如：![Image text](./static/css_hackone.png)
 
 - 使用连接 ' [说明文字***](地址)' 
-[推荐阅读](https://juejin.im/post/5c9ad3ecf265da61173a43ab)
+例如：[推荐阅读](https://juejin.im/post/5c9ad3ecf265da61173a43ab)
