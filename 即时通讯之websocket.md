@@ -1,6 +1,3 @@
-# WebSocket
-
-
 # WebSocket说明
 WebSocket是HTML5新增的协议，建立浏览器与服务器不受限双向通信的通道，服务器可在任何时间推送消息给浏览器
 

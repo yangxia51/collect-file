@@ -1,4 +1,7 @@
-# 生命周期钩子函数
+## vue原理
+采用数据劫持结合发布者-订阅者模式的方式，通过Object.defineProperty()来劫持各个属性的setter，getter，在数据变动时发布消息给订阅者，触发相应的监听回调。
+![Image text](./static/css_hackone.png)
+ 
 ## vue生命周期 就是vue实例挂载到销毁的过程
 - 1、beforeCreate 创建前 获取不到props和data 因为这些数据初始化都在initState
 - 2、created 创建 可以访问props和data 但是没有挂载 看不到数据
@@ -11,8 +14,8 @@
 
 ## 组件通讯的几种方式
 - 父子组件通信 (父传子 props  子传父 emit)  
-- 兄弟组件通信 
-- 跨多层级组件通信  
+- 兄弟组件通信  Vuex
+- 跨多层级组件通信 Vuex 
 - 任意组件 Vuex
 
 ## mixin/mixins 区别
@@ -29,8 +32,11 @@
 - v-show 只是在 display: none 和 display: block 之间切换 组件都会被渲染出来 适用于频繁切换
 - v-if不会 减少渲染开销
 
-## vue响应式原理 双向绑定
-Object.defineProperty() 实现数据响应式，通过这个函数可以监听到 set 和 get 的事件
+## vue双向绑定
+Object.defineProperty() 实现数据响应式，通过这个函数可以监听到 seter 和 geter 的事件
+。
+在组件挂载时，会先对所有需要的属性调用 Object.defineProperty()，然后实例化 Watcher，传入组件更新的回调。在实例化过程中，会对模板中的属性进行求值，触发依赖收集。在派发更新的时候取出对应的 Watcher 然后执行 update 函数
+
 [参考详情](https://segmentfault.com/a/1190000006599500?utm_source=tag-newest)
 ## vue模板编译过程
 - vue一切皆模板
@@ -40,3 +46,4 @@ Object.defineProperty() 实现数据响应式，通过这个函数可以监听�
   -  3.将 AST 转换为 render 函数
   -  4.render 生成 Virtual DOM 最终映射为真实 DOM
 
+--- 延伸问题 ---- 
